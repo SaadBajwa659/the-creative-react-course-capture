@@ -17,6 +17,7 @@ import {
     swoopAdoopSecond,
 } from "../animation.js"
 import { useScroll } from "../components/useScroll.js";
+import ScrollTop from "../components/ScrollTop.js";
 
 const OurWork = () => {
     const [element, controls] = useScroll();
@@ -44,32 +45,31 @@ const OurWork = () => {
                     </Hide>
                 </Link>
             </Movie>
-                <Movie
-                    ref={element}
-                    variants={fade}
-                    animate={controls}
-                    initial="hidden"
-                >
-                    <h2>The Racer</h2>
-                    <motion.div variants={lineAnim} className="line"></motion.div>
-                    <Link to="/work/the-racer">
-                        <img src={theracer} alt="theracer" />
-                    </Link>
-                </Movie>
-            <Hide>
-                <Movie
-                    ref={element2}
-                    variants={fade}
-                    animate={controls2}
-                    initial="hidden"
-                >
-                    <h2>Good Times</h2>
-                    <motion.div variants={lineAnim} className="line"></motion.div>
-                    <Link to="/work/good-times">
-                        <img src={goodtimes} alt="goodtimes" />
-                    </Link>
-                </Movie>
-            </Hide>
+            <Movie
+                ref={element}
+                variants={fade}
+                animate={controls}
+                initial="hidden"
+            >
+                <h2>The Racer</h2>
+                <motion.div variants={lineAnim} className="line"></motion.div>
+                <Link to="/work/the-racer">
+                    <img src={theracer} alt="theracer" />
+                </Link>
+            </Movie>
+            <Movie
+                ref={element2}
+                variants={fade}
+                animate={controls2}
+                initial="hidden"
+            >
+                <h2>Good Times</h2>
+                <motion.div variants={lineAnim} className="line"></motion.div>
+                <Link to="/work/good-times">
+                    <img src={goodtimes} alt="goodtimes" />
+                </Link>
+            </Movie>
+            <ScrollTop />
         </Work>
     )
 }
