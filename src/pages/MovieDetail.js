@@ -1,15 +1,13 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
-import { useNavigate } from "react-router-dom";
 import { MovieState } from "../movieState";
 // Animations
 import { motion } from "framer-motion"
 import { pageAnimation } from "../animation.js"
 
 const MovieDetail = () => {
-    // const history = useNavigate();
     const url = window?.location.pathname;
-    const [movies, setMovies] = useState(MovieState);
+    const [movies] = useState(MovieState);
     const [movie, setMovie] = useState(null);
 
     // UseEffect
