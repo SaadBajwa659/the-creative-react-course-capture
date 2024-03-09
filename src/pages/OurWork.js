@@ -14,7 +14,6 @@ import {
     fade,
     photoAnim,
     lineAnim,
-    swoopAdoopSecond,
 } from "../animation.js"
 import { useScroll } from "../components/useScroll.js";
 import ScrollTop from "../components/ScrollTop.js";
