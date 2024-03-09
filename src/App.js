@@ -8,7 +8,7 @@ import OurWork from "./pages/OurWork";
 import Nav from "./components/Nav";
 import MovieDetail from "./pages/MovieDetail";
 // Router
-import { Switch, Route, Routes, useLocation } from 'react-router-dom';
+import { Route, Routes, useLocation } from 'react-router-dom';
 // Animation
 import { AnimatePresence } from "framer-motion";
 
